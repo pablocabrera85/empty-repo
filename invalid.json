@@ -2,7 +2,7 @@
             "executionPlatform": "Camunda Cloud",
             "executionPlatformVersion": "8.7.0",
             "exporter": {
-                "name": "Camunda Web Modeler"
+                "name": "Camunda Web Modeler",
                 "version": "1ab8948"
             },
             "schemaVersion": 18,
