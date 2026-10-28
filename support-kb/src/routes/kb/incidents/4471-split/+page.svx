@@ -4,7 +4,7 @@ title: '#4471 · three problems, not one'
 owner: support desk
 status: living
 reviewed: 2026-10-28
-signature: pablocabrera85
+signature: v1.eyJzdWIiOiIyOTk3IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMTc4OTIsImV4cCI6MTc5MzMwNDI5Mn0.KrTj_uSpVDZ7tNUXE0GqiL9nQWwQ0Nmo5Kje_-gr1bM
 ---
 
 <script>
@@ -12,7 +12,6 @@ signature: pablocabrera85
   import CauseTable from '#lib/kb/CauseTable.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = 'pablocabrera85';
 </script>
 
 [#4471](/kb/incidents/4471) was merged as one bug and marked known, with one fix queued. The
