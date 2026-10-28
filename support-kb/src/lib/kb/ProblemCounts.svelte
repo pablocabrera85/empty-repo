@@ -11,9 +11,8 @@
   const count = (cause: string) => groups.find((g) => g.cause === cause)?.reports.length ?? 0;
   const oneDay = $derived(groups.reduce((n, g) => n + readAs(g, notes.oneDayMove), 0));
   const rows = $derived([
-    { problem: 'parser reads day-first dates month first', reports: count('parser') - oneDay },
+    { problem: 'parser reads day-first dates month first', reports: count('parser') },
     { problem: 'booking-v3 form hints MM/DD/YYYY', reports: count('hint') },
-    { problem: 'dates off by one day', reports: oneDay },
   ]);
 </script>
 
@@ -31,6 +30,11 @@
   </tbody>
 </table>
 
+{#if oneDay}
+  <p class="note">{oneDay} of the parser reports read as a one-day move; counted under parser, where they are filed.</p>
+{/if}
+
 <style>
   .sum { font-size: 1.1rem; }
+  .note { color: var(--muted); font-size: 0.85em; }
 </style>
